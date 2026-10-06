@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #171717;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8% 60px;
+}
+
+.home-content {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 90px;
+}
+
+
+/* Profile Image */
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 8px solid white;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Intro */
+
+.intro {
+    max-width: 550px;
+}
+
+.small-text {
+    color: #777;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+.intro h2 {
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+button {
+    border: none;
+
+    background: #171717;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    background: #333;
+}
+
+
+/* ================= PROFILE PAGE ================= */
+
+.profile-page {
+    min-height: 100vh;
+
+    background: #111;
+
+    color: white;
+
+    padding: 110px 8% 70px;
+
+    display: none;
+}
+
+.profile-container {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.profile-heading {
+    margin-bottom: 40px;
+}
+
+.profile-heading h2 {
+    font-size: 45px;
+
+    margin-top: 8px;
+}
+
+
+/* Cards */
+
+.profile-card {
+    background: #1c1c1c;
+
+    border: 1px solid #292929;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Education */
+
+.education-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #303030;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h4 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.education-item p {
+    color: #aaa;
+
+    margin-bottom: 7px;
+}
+
+.education-item span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skills span {
+    padding: 10px 17px;
+
+    border: 1px solid #444;
+
+    border-radius: 30px;
+
+    color: #ddd;
+
+    font-size: 14px;
+}
+
+
+/* About */
+
+.profile-card>p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* Back Button */
+
+.back-button {
+    margin-top: 15px;
+
+    background: white;
+
+    color: #111;
+}
+
+.back-button:hover {
+    background: #ddd;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .home {
+        padding: 110px 5% 60px;
+    }
+
+    .home-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .intro h1 {
+        font-size: 42px;
+    }
+
+    .intro h2 {
+        font-size: 19px;
+    }
+
+    .profile-page {
+        padding: 100px 5% 60px;
+    }
+
+    .profile-heading h2 {
+        font-size: 36px;
+    }
+}
