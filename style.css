@@ -265,8 +265,8 @@ button:hover {
 /* Skills */
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 105px);
     gap: 22px;
 }
 
@@ -294,6 +294,40 @@ button:hover {
 
 .skills span i {
     font-size: 42px;
+}
+
+/* Individual logo colors */
+
+.skills span:nth-child(1) i {
+    color: #E34F26;
+}
+
+.skills span:nth-child(2) i {
+    color: #1572B6;
+}
+
+.skills span:nth-child(3) i {
+    color: #F7DF1E;
+}
+
+.skills span:nth-child(4) i {
+    color: #00599C;
+}
+
+.skills span:nth-child(5) i {
+    color: #ED8B00;
+}
+
+.skills span:nth-child(6) i {
+    color: #4479A1;
+}
+
+.skills span:nth-child(7) i {
+    color: #F05032;
+}
+
+.skills span:nth-child(8) i {
+    color: #ffffff;
 }
 
 .skills span:hover {
